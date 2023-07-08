@@ -1,0 +1,128 @@
+*,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	max-height: 50%;
+	height: 50%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.todo-app {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.container {
+	width: 500px;
+	height: 400px;
+	max-height: auto;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 25px;
+}
+
+.todo-app_header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.todo-app_header img {
+	width: auto;
+	height: 25px;
+	margin-left: 7px;
+}
+
+.todo-app_title {
+	font-family: "Bree Serif", serif;
+}
+
+.todo-app_lists {
+	position: relative;
+	display: flex;
+}
+
+.todo-app_lists #input-box {
+	width: 100%;
+	height: 45px;
+	padding-left: 15px;
+	margin-right: 15px;
+	border-radius: 50px;
+	font-size: 15px;
+	border: none;
+	background: #ededed;
+}
+
+.todo-app_lists #input-box:focus {
+	outline: none;
+}
+
+.todo-app_lists #addBtn {
+	position: absolute;
+	right: 0;
+	padding: 14px 40px;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	font-family: "Roboto Slab", serif;
+	font-size: 13px;
+	font-weight: 500;
+	background: #ee2a7b;
+	color: #fff;
+}
+
+.todoList li {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 3px;
+	background: #f8f8f8;
+}
+
+.todoList li p {
+	width: 75%;
+	font-family: "Roboto Slab", serif;
+}
+
+.todoList li .btn {
+	font-family: "Roboto Slab", serif;
+	padding: 5px 10px;
+	margin: 0 5px;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+}
+
+.todoList li .deleteBtn {
+	background-color: #ff4d4d;
+}
+
+.todoList li .editBtn {
+	background-color: #f9ce34;
+}
